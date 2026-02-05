@@ -1,0 +1,22 @@
+ECS Student Survey
+SURVEY RESPONSE STATISTICS
+
+NUMBER OF RESPONDENTS: 10
+
+#####
+FOR EACH DEMOGRAPHIC CATEGORY BELOW, RELATIVE PERCENTUAL FREQUENCIES ARE COMPUTED FOR EACH ATTRIBUTE VALUE
+
+UNDERGRADUATE PROGRAM
+30.00: Biomedical Engineering
+10.00: Civil Engineering
+40.00: Computer Science
+0.00: Computer Engineering
+0.00: Data Science
+0.00: Electrical Engineering
+0.00: Mechanical Engineering
+20.00: Software Engineering
+
+RESIDENCE STATUS
+40.00: Canadian Citizen
+20.00: Permanent Resident
+40.00: International Student

@@ -1,0 +1,26 @@
+# Please ignore lines that start with the hash/sharp character. Those lines are test comments.
+# Below you see the test configuration (1 for on, 0 for off) split by commas
+# First bit is for answer frequencies; second bit is for answer averages per question. Third bit is for demographics.
+# These test bits will help you develop your code incrementally.
+0,0,1
+# Below you will find the UNDERGRADUATE PROGRAM possible values
+Biomedical Engineering,Civil Engineering,Computer Science,Computer Engineering,Data Science,Electrical Engineering,Mechanical Engineering,Software Engineering
+# Below you will find the RESIDENCE STATUS possible values
+Canadian Citizen,Permanent Resident,International Student
+# Below is the set of questions/assertions, split by semi-colons.
+My studies contributed to develop skills and knowledge for employment;My studies contributed to develop effective study and learning skills;My studies contributed to develop time management skills;My studies contributed to thinking logically and analytically;My studies contributed to dealing successfully with obstacles to achieve an objective;My studies contributed to develop knowledge of career options;My studies contributed to develop ability to find and use information;My studies contributed to develop self-confidence;My studies contributed to develop ability to interact with people from backgrounds different from my own;My studies contributed to develop ability to evaluate my own strengths and weaknesses;My studies contributed to thinking creatively to find ways to achieve an objective;My studies contributed to develop persistence with difficult tasks
+# Below are the possible Likert items for answers, split by commas.
+disagree,partially disagree,partially agree,agree
+# Below, you will find the number of respondents to the survey
+10
+# Survey answers below: each line correspond to an answer - first part is the demographic data, second part is the respondent's answers to the survey questions/assertions.
+Computer Science,Canadian Citizen,agree,disagree,disagree,disagree,disagree,disagree,disagree,disagree,disagree,disagree,disagree,disagree
+Computer Science,Permanent Resident,agree,agree,agree,agree,agree,agree,agree,agree,agree,agree,agree,agree
+Computer Science,International Student,agree,disagree,disagree,agree,disagree,agree,disagree,agree,disagree,agree,disagree,agree
+Computer Science,International Student,partially agree,agree,agree,agree,agree,partially agree,agree,agree,partially agree,agree,agree,agree
+Biomedical Engineering,Canadian Citizen,partially disagree,agree,agree,agree,agree,partially disagree,agree,agree,partially disagree,agree,agree,agree
+Biomedical Engineering,International Student,partially agree,partially agree,agree,agree,agree,partially agree,partially disagree,agree,partially agree,partially disagree,agree,agree
+Biomedical Engineering,International Student,partially disagree,agree,disagree,agree,partially agree,partially disagree,agree,partially agree,partially disagree,agree,disagree,partially agree
+Software Engineering,Canadian Citizen,partially disagree,agree,disagree,agree,partially agree,partially disagree,agree,partially agree,partially disagree,agree,disagree,partially agree
+Software Engineering,Canadian Citizen,disagree,agree,partially agree,partially disagree,agree,partially agree,partially disagree,agree,disagree,partially agree,partially agree,partially disagree
+Civil Engineering,Permanent Resident,partially disagree,agree,partially agree,partially disagree,agree,disagree,partially agree,partially disagree,agree,disagree,agree,partially disagree

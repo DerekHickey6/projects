@@ -1,0 +1,95 @@
+ECS Student Survey
+SURVEY RESPONSE STATISTICS
+
+NUMBER OF RESPONDENTS: 10
+
+#####
+FOR EACH QUESTION/ASSERTION BELOW, RELATIVE PERCENTUAL FREQUENCIES ARE COMPUTED FOR EACH LEVEL OF AGREEMENT
+
+1. My studies contributed to develop skills and knowledge for employment
+10.00: disagree
+40.00: partially disagree
+20.00: partially agree
+30.00: agree
+
+2. My studies contributed to develop effective study and learning skills
+20.00: disagree
+0.00: partially disagree
+10.00: partially agree
+70.00: agree
+
+3. My studies contributed to develop time management skills
+40.00: disagree
+0.00: partially disagree
+20.00: partially agree
+40.00: agree
+
+4. My studies contributed to thinking logically and analytically
+10.00: disagree
+20.00: partially disagree
+0.00: partially agree
+70.00: agree
+
+5. My studies contributed to dealing successfully with obstacles to achieve an objective
+20.00: disagree
+0.00: partially disagree
+20.00: partially agree
+60.00: agree
+
+6. My studies contributed to develop knowledge of career options
+20.00: disagree
+30.00: partially disagree
+30.00: partially agree
+20.00: agree
+
+7. My studies contributed to develop ability to find and use information
+20.00: disagree
+20.00: partially disagree
+10.00: partially agree
+50.00: agree
+
+8. My studies contributed to develop self-confidence
+10.00: disagree
+10.00: partially disagree
+20.00: partially agree
+60.00: agree
+
+9. My studies contributed to develop ability to interact with people from backgrounds different from my own
+30.00: disagree
+30.00: partially disagree
+20.00: partially agree
+20.00: agree
+
+10. My studies contributed to develop ability to evaluate my own strengths and weaknesses
+20.00: disagree
+10.00: partially disagree
+10.00: partially agree
+60.00: agree
+
+11. My studies contributed to thinking creatively to find ways to achieve an objective
+40.00: disagree
+0.00: partially disagree
+10.00: partially agree
+50.00: agree
+
+12. My studies contributed to develop persistence with difficult tasks
+10.00: disagree
+20.00: partially disagree
+20.00: partially agree
+50.00: agree
+
+#####
+FOR EACH QUESTION/ASSERTION BELOW, THE AVERAGE RESPONSE IS SHOWN (FROM 1-DISAGREEMENT TO 4-AGREEMENT)
+
+1. My studies contributed to develop skills and knowledge for employment - 2.70
+2. My studies contributed to develop effective study and learning skills - 3.30
+3. My studies contributed to develop time management skills - 2.60
+4. My studies contributed to thinking logically and analytically - 3.30
+5. My studies contributed to dealing successfully with obstacles to achieve an objective - 3.20
+6. My studies contributed to develop knowledge of career options - 2.50
+7. My studies contributed to develop ability to find and use information - 2.90
+8. My studies contributed to develop self-confidence - 3.30
+9. My studies contributed to develop ability to interact with people from backgrounds different from my own - 2.30
+10. My studies contributed to develop ability to evaluate my own strengths and weaknesses - 3.10
+11. My studies contributed to thinking creatively to find ways to achieve an objective - 2.70
+12. My studies contributed to develop persistence with difficult tasks - 3.10
