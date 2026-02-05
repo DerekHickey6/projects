@@ -1,0 +1,656 @@
+# tactiq.io free youtube transcript
+# No title found
+# https://www.youtube.com/watch/jApBXeFQTMk
+
+00:00:00.000 No text
+00:00:00.050 in this section I'd like to give a brief
+00:00:02.580 introduction to signals and systems
+00:00:04.259 without getting very much into the
+00:00:06.240 underlying mathematics mainly I'll
+00:00:08.670 introduce some basic terminology and
+00:00:10.710 also try to motivate why we might want
+00:00:13.139 to study signals and systems to begin
+00:00:15.330 with to begin with I need to introduce
+00:00:18.000 No text
+00:00:20.580 the notion of a signal so a signal is
+00:00:23.310 essentially just a function except that
+00:00:26.310 when we use the term signal usually it's
+00:00:28.230 implied that the function is associated
+00:00:30.720 with some kind of physical phenomenon
+00:00:32.488 for example maybe the function is
+00:00:34.079 measuring a physical quantity in the
+00:00:35.910 real world so maybe the function is
+00:00:38.010 measuring temperature with respect to
+00:00:40.020 time or position with respect to time or
+00:00:42.600 something like that otherwise there's
+00:00:44.700 not really much difference between the
+00:00:46.079 term signal and the term function now I
+00:00:49.230 need to introduce a little bit of
+00:00:50.129 terminology that relates two functions
+00:00:52.020 we can talk about independent and
+00:00:53.489 dependent variables in the context of
+00:00:55.170 functions so if I have a function f and
+00:00:57.809 the function is a function of the
+00:01:00.239 variables T 1 T 2 and so on up to TN we
+00:01:02.940 refer to T 1 T 2 and so on up to TN as
+00:01:05.820 the independent variables of the
+00:01:07.229 function whereas the value of the
+00:01:09.090 function itself is referred to as the
+00:01:10.799 dependent variable and there are many
+00:01:12.900 many examples of signals the list goes
+00:01:14.939 on essentially forever but a few
+00:01:16.860 examples of signals are things like
+00:01:18.509 voltages and currents in an electronic
+00:01:20.670 circuit positions velocities
+00:01:23.100 accelerations forces or torques in a
+00:01:25.350 mechanical system flow rates of liquids
+00:01:28.290 or gases in some kind of chemical
+00:01:30.119 process even things like digital images
+00:01:32.700 digital video digital audio stock market
+00:01:35.610 indexes all of these things also can be
+00:01:37.710 considered to be signals
+00:01:40.940 we can classify signals in a number of
+00:01:41.000 No text
+00:01:43.490 very basic ways the first is we can
+00:01:46.010 classify signal on the basis of the
+00:01:48.050 number of independent variables it has
+00:01:49.910 this is sometimes referred to as the
+00:01:51.590 dimensionality of the signal a signal
+00:01:54.620 with one independent variable is said to
+00:01:56.240 be one dimensional an example of a one
+00:01:58.070 dimensional signal would be an audio
+00:01:59.780 signal where you have air pressure
+00:02:01.610 fluctuations versus time so time is the
+00:02:04.400 independent variable there's one
+00:02:06.170 independent variable therefore it's a
+00:02:07.760 one dimensional signal a signal with
+00:02:10.430 more than one independent variable is
+00:02:12.080 said to be multi-dimensional an example
+00:02:14.510 of a multi dimensional signal would be
+00:02:16.160 an image where you have light intensity
+00:02:18.410 as a function of horizontal and vertical
+00:02:20.090 position so horizontal position would be
+00:02:22.910 one independent variable vertical
+00:02:25.400 position would be the other independent
+00:02:26.960 variable so there's two of them and this
+00:02:28.730 is more than one therefore this is a
+00:02:30.260 multi-dimensional signal you can also
+00:02:33.560 classify signals on the basis of whether
+00:02:35.540 or not they're independent and dependent
+00:02:37.100 variables are either continuous or
+00:02:39.110 discrete so first I need to introduce a
+00:02:42.320 notion of continuous versus discrete
+00:02:43.880 values so a variable that's continuous
+00:02:46.700 in nature is one that can take on values
+00:02:48.380 over a continuum a classic example of a
+00:02:51.440 continuous variable would be one that's
+00:02:53.480 real valued a real valued quantity can
+00:02:56.060 take on for example the value 0 it can
+00:02:58.190 take on the value 1 but importantly it
+00:03:00.380 can take on all values over a continuum
+00:03:02.750 between 0 and 1 for example point five
+00:03:05.060 point seven point three take pick your
+00:03:08.060 favorite number between zero and one on
+00:03:11.600 the other hand a discrete value quantity
+00:03:13.370 can only take on certain particular
+00:03:15.500 values in a classic example of a
+00:03:17.209 discrete valued variable would be an
+00:03:18.769 integer valued variable an integer can
+00:03:21.110 take on the value 0 for example it can
+00:03:23.030 take on the value 1 but importantly it
+00:03:25.220 can't take on values between 0 and 1 it
+00:03:27.590 only takes on certain specific
+00:03:28.940 prescribed values so with that in mind
+00:03:33.350 we can introduce a few terms that relate
+00:03:35.239 to whether or not the independent
+00:03:37.580 variable of a signal is continuous or
+00:03:39.440 discrete so a signal with continuous
+00:03:42.980 independent variables is said to be a
+00:03:44.660 continuous-time signal an example of
+00:03:48.260 this would be a voltage waveform
+00:03:50.209 where your the voltage waveform is
+00:03:52.400 essentially measuring electric potential
+00:03:54.400 versus time where time is a real-valued
+00:03:56.810 quantity a signal with a discrete
+00:04:00.140 independent variable is said to be a
+00:04:01.730 discrete-time signal an example of this
+00:04:03.920 would be a stock market index where the
+00:04:06.290 value of the index is the closing value
+00:04:08.930 of the stock market index at the end of
+00:04:11.989 the trading day so it's defined only at
+00:04:14.269 certain particular points in time it's a
+00:04:16.060 discrete-time signal you might ask well
+00:04:19.850 why do we use the word time here because
+00:04:21.500 there's nothing really that requires
+00:04:22.849 that the independent variable represent
+00:04:24.740 time right we could have a signal which
+00:04:26.449 is measuring some kind of physical
+00:04:28.820 phenomenon with respect to a position
+00:04:30.530 like maybe R what measuring how
+00:04:32.599 temperature is of propagating through
+00:04:35.180 some some materials so we're measuring
+00:04:37.310 temperature versus position so it's a
+00:04:40.400 very natural question to ask why does
+00:04:41.960 this terminology use the word time so
+00:04:44.090 why is it continuous-time and
+00:04:45.380 discrete-time it's just a convention
+00:04:47.509 essentially in a lot of applications the
+00:04:49.849 independent variable does represent time
+00:04:51.710 so for this reason a lot of the
+00:04:53.720 terminology kind of assumes the fact
+00:04:56.000 that time is the independent variable
+00:04:57.680 and it's the terminology is sort of
+00:05:00.409 structured in this way but of course the
+00:05:02.360 independent variable could be something
+00:05:03.740 other than time but we still use this
+00:05:05.570 the same terminology nevertheless we can
+00:05:08.870 also classify signals on the basis of
+00:05:10.610 whether the dependent variable in other
+00:05:12.199 words the value of the function itself
+00:05:13.550 is continuous or discrete so a signal
+00:05:16.820 with a continuous dependent variable is
+00:05:18.919 said to be a continuous valued function
+00:05:20.720 an example of this would be a voltage
+00:05:22.699 waveform where electric potential at
+00:05:24.830 least if you ignore quantum effects and
+00:05:26.360 so on is is a quantity that can vary
+00:05:28.789 over a continuum and a signal with a
+00:05:32.599 discrete dependent variable is said to
+00:05:34.099 be discrete valued a classic example of
+00:05:36.560 this would be essentially any digital
+00:05:38.120 data digital data by definition only
+00:05:40.430 takes on a certain prescribed values and
+00:05:44.030 we can also define a number of other
+00:05:46.430 terms that kind of build on the
+00:05:48.050 terminology that was introduced above so
+00:05:50.479 if we have a signal that is continuous
+00:05:52.370 value and continuous time we call it an
+00:05:54.530 analogue signal and if we have a signal
+00:05:56.960 which is discrete valued and discrete
+00:05:58.820 time we call it a digital signal often
+00:06:01.000 No text
+00:06:02.389 it's very helpful to reference
+00:06:03.740 functions in graphical form I don't
+00:06:06.080 really have a lot to say about this
+00:06:07.610 slide because I'm sure that anyone
+00:06:09.080 watching this video has graphed many
+00:06:10.940 functions in their lifetime the only
+00:06:13.009 thing I want to say is with respect to
+00:06:14.599 discrete-time signals sometimes I've
+00:06:17.240 noticed that students have a tendency to
+00:06:18.800 want to connect the dots and what I mean
+00:06:20.389 by this is when we're doing a discrete
+00:06:22.009 time plot of a function that looks for
+00:06:23.630 example something like this there's a
+00:06:25.460 tendency for students to want to draw a
+00:06:27.410 line segment between this dot here and
+00:06:29.479 this dot here and then connect this dot
+00:06:31.490 here to this side here by line segment
+00:06:33.440 and so on but this doesn't actually make
+00:06:35.330 any sense if you think about it because
+00:06:36.919 for example if I had draw a line segment
+00:06:39.110 from this dot here at minus 2 to this
+00:06:41.060 dot here at 1 this would imply that this
+00:06:43.580 function is defined at all places on the
+00:06:46.190 continuum between minus 2 and minus 1
+00:06:48.259 but by definition this discrete time
+00:06:50.659 signals only defined at the integers so
+00:06:52.789 it doesn't make sense to connect the
+00:06:54.560 dots because this would imply that the
+00:06:56.270 function is defined at places other than
+00:06:58.039 the integers so if you might be so
+00:07:00.229 inclined to connect the dots resist the
+00:07:02.210 temptation to do so because it doesn't
+00:07:04.069 really make sense and it's not really
+00:07:05.360 correct next I'd like to talk about
+00:07:09.000 No text
+00:07:11.479 systems so a system is simply some
+00:07:14.449 entity that takes in one or more signals
+00:07:17.060 as input and transforms them and
+00:07:19.729 manipulates them in some way to produce
+00:07:21.440 some number of signals as outputs in
+00:07:23.509 this particular picture with M imputs
+00:07:26.330 going into the system it transforms them
+00:07:29.180 in some way to produce n signals coming
+00:07:32.000 out and what the system does could be
+00:07:35.690 something very trivial or it could be
+00:07:38.210 something extremely complicated
+00:07:39.500 depending on the particular application
+00:07:44.000 No text
+00:07:44.240 just like in the case of signals systems
+00:07:47.070 can also be classified in a number of
+00:07:48.960 basic ways and we're going to look at
+00:07:50.730 some of these ways now so the first way
+00:07:53.610 in which we can classify systems is on
+00:07:55.230 the basis of the number of inputs they
+00:07:56.910 have so a system with one input is set
+00:07:59.400 to be single input this is sometimes
+00:08:01.170 abbreviated by the acronym si the system
+00:08:04.530 with more than one input is said to be
+00:08:05.940 multiple input or multi input which is
+00:08:08.790 sometimes abbreviated with the acronym
+00:08:10.530 mi we can also classify systems on the
+00:08:13.890 basis of the number of outputs they have
+00:08:15.450 so a system with one output is said to
+00:08:17.250 be a single output system abbreviated by
+00:08:19.530 the acronym s Oh a system with more than
+00:08:22.140 one output is said to be a multi output
+00:08:23.820 or multiple output system which is
+00:08:25.710 sometimes abbreviated with the acronym
+00:08:27.540 mo also we were introduced to a bunch of
+00:08:32.520 terminology earlier which relates two
+00:08:34.349 types of signals how we can classify
+00:08:36.000 signals and a lot of this terminology
+00:08:38.400 can be applied to systems to describe
+00:08:40.590 the types of signals that are processed
+00:08:42.330 by a system so for example terminology
+00:08:44.970 like one-dimensional multi-dimensional
+00:08:47.070 continuous time discrete time analog and
+00:08:49.530 digital all of these terms which are
+00:08:51.750 used to describe or classify signals can
+00:08:53.910 also be applied to systems meaning that
+00:08:56.010 these are the types of signals that
+00:08:57.690 these systems process so for example a
+00:09:00.470 one-dimensional system as a system that
+00:09:02.670 processes one dimensional signals or a
+00:09:04.950 digital system as a process a system
+00:09:07.230 that processes digital signals and so on
+00:09:09.500 so we can reuse a lot of the terminology
+00:09:12.180 that was introduced earlier that is used
+00:09:13.950 to classify signals in the context of
+00:09:15.810 systems as well
+00:09:19.000 No text
+00:09:19.610 on this slide in the next few slides I'd
+00:09:22.700 like to introduce some of the general
+00:09:24.290 application areas in which the
+00:09:25.940 mathematics of signals and systems which
+00:09:27.980 we're going to be studying can be used
+00:09:29.780 so the first application area I'd like
+00:09:32.090 to look at is what I'd loosely referred
+00:09:33.830 to as signal processing systems and on
+00:09:36.560 this slide I'm going to focus on the
+00:09:37.880 diagram on the top half of the slide
+00:09:39.500 because this is the configuration which
+00:09:41.240 is much more prevalent in the world
+00:09:42.530 today and essentially what we have here
+00:09:45.140 is we have some kind of analog signal
+00:09:47.030 that we want to process essentially the
+00:09:48.710 world we live in is analog so we have
+00:09:50.450 some analog signal we want to process
+00:09:51.860 but we want to process it using some
+00:09:54.350 discrete-time device basically a digital
+00:09:56.450 computer or digital electronics so in
+00:10:01.040 order to do this we have to first take
+00:10:02.330 our analog signal convert it into some
+00:10:04.160 kind of digital or discrete-time signal
+00:10:06.500 then process it and then convert it back
+00:10:08.480 to an analog signal and we're done and
+00:10:11.540 this essentially embodies the processes
+00:10:13.970 of sampling and interpolation which
+00:10:15.590 we'll look at later in the course maybe
+00:10:17.750 to give a little bit more concrete
+00:10:19.660 interpretation of this diagram let's
+00:10:21.530 actually consider a particular example
+00:10:23.030 suppose you have a microphone and you
+00:10:26.180 want to speak into the microphone and
+00:10:28.100 apply some kind of audio effects to your
+00:10:29.870 voice maybe a deco or something like
+00:10:32.060 that in this particular application your
+00:10:35.540 your your voice which is being you know
+00:10:39.230 it's essentially captured by a
+00:10:41.780 microphone it's an analog signal that's
+00:10:44.390 essentially of voltage that's induced in
+00:10:46.550 some microphone so we're gonna take that
+00:10:48.950 signal and we're going to convert it
+00:10:50.630 into a discrete-time signal which is a
+00:10:53.210 sequence of numbers this is done by a
+00:10:54.980 continuous dis to discrete-time
+00:10:56.810 converter this is essentially embodying
+00:10:58.580 the process of sampling then we take our
+00:11:02.240 sequence of samples that we receive
+00:11:04.040 which is just a sequence of numbers a
+00:11:06.050 discrete-time signal and we process it
+00:11:08.090 using our digital electronics or digital
+00:11:10.130 computer which is this discrete-time
+00:11:11.960 system here and then this will produce
+00:11:14.450 some output which is in the form of a
+00:11:16.670 discrete-time signal it's just a
+00:11:18.080 sequence of numbers which we then need
+00:11:20.120 to convert back to an analog signal so
+00:11:22.070 we feed this through a discrete to
+00:11:23.570 continuous-time converter which is
+00:11:25.700 essentially performing an interpolation
+00:11:27.110 sort of process to produce an analog
+00:11:29.420 signal and then this would be something
+00:11:31.160 that we could play on our headset our
+00:11:33.230 speaker it's the our voice which with
+00:11:36.020 whatever effect we've just applied to it
+00:11:37.940 by the discrete-time system in the
+00:11:39.800 middle of this block diagram so just a
+00:11:42.620 simple example but to give you a general
+00:11:44.330 idea of what I mean by signal processing
+00:11:46.760 systems the next application I'd like to
+00:11:50.000 No text
+00:11:51.590 consider is communication systems so in
+00:11:54.560 communication systems the basic problem
+00:11:56.810 that we're dealing with is we have some
+00:11:58.460 message signal or information that we
+00:12:01.430 want to convey from one point in space
+00:12:03.020 to another point in space where the two
+00:12:06.140 these two points in space may be
+00:12:07.400 separated by meters tens of meters
+00:12:10.520 kilometers tens of kilometers hundreds
+00:12:13.430 of kilometers even trillions of
+00:12:15.260 kilometers in deep space applications
+00:12:17.770 but in all cases the basic idea is the
+00:12:20.450 same you're trying to get a message some
+00:12:22.040 information from one point in space to
+00:12:24.050 another point in space to make the
+00:12:27.260 example a little bit more concrete I'm
+00:12:28.760 going to go through this for the case of
+00:12:30.230 a radio broadcast so in this case the
+00:12:33.170 message signal the information to be
+00:12:35.000 sent is just the voice of the
+00:12:36.380 broadcaster so in this particular
+00:12:39.860 application we don't really want the
+00:12:42.470 broadcaster just to scream really loud
+00:12:44.240 so everyone can hear in other words the
+00:12:46.730 the original form that the message
+00:12:49.370 signal is in in other words air pressure
+00:12:51.080 fluctuations versus time this is not a
+00:12:53.660 very practical way to broadcast things
+00:12:55.790 instead what we would typically do is
+00:12:57.440 convert the message signal into a form
+00:12:59.660 which is more amenable to broadcasting
+00:13:01.610 and this is essentially what this
+00:13:03.200 transmitter does and in a radio
+00:13:05.480 broadcast what we do is we convert the
+00:13:07.340 air pressure fluctuations with respect
+00:13:09.950 to time into electromagnetic waves so
+00:13:13.970 they transmitted signal the thing we're
+00:13:15.410 actually broadcasting is the
+00:13:16.910 electromagnetic magnetic waves that
+00:13:19.430 somehow embody the original audio signal
+00:13:21.710 that we want to broadcast these
+00:13:23.300 electromagnetic waves then propagate
+00:13:25.460 through the communication channel which
+00:13:26.930 is just the atmosphere in this
+00:13:28.430 particular example and then eventually
+00:13:31.130 they're received at the receiver which
+00:13:32.930 is just the person the radio of the
+00:13:35.030 person who's listening to the broadcast
+00:13:36.560 and then the job of the receiver is to
+00:13:39.560 try to make the best estimate of what
+00:13:41.270 was the original signal that was sent
+00:13:42.620 because there will be some noise and
+00:13:44.390 distortion added typically so it does
+00:13:46.460 its best
+00:13:47.120 to try to remove this noise and get the
+00:13:49.189 best reproduction of the original signal
+00:13:51.350 possible in other words the best
+00:13:52.850 estimate of the original message signal
+00:13:54.620 and this is the basic idea behind a
+00:13:56.779 communication system another area in
+00:14:01.000 No text
+00:14:02.029 which the mathematics of signals and
+00:14:03.620 systems can be used is in control
+00:14:05.689 systems so in control system
+00:14:08.329 applications the basic idea or the
+00:14:10.339 problem that we're trying to solve is to
+00:14:12.589 be able to have some physical quantity
+00:14:14.540 in the real world track a desired value
+00:14:17.240 over time so a very simple example would
+00:14:20.360 be a thermostat system a thermostat
+00:14:22.220 system where the value we want to
+00:14:25.189 control is the temperature of the room
+00:14:26.839 and we want the temperature of the room
+00:14:28.399 to track some desired value over time
+00:14:30.649 and the value and one at the track is
+00:14:32.600 whatever the setting of the thermostat
+00:14:34.069 is saying we'd like the temperature of
+00:14:35.509 the room to be to put this in the
+00:14:38.509 context of the diagram that's shown in
+00:14:40.040 this slide which is labeled using some
+00:14:41.959 fairly standard terminology from control
+00:14:44.509 systems we have what's called the
+00:14:46.370 reference input the reference input is
+00:14:48.110 the desired value for the physical
+00:14:50.149 quantity that we're trying to control
+00:14:52.059 the output of the system is the actual
+00:14:55.069 value that of the quantity that we're
+00:14:56.749 trying to control so for a thermostat
+00:14:58.399 system our reference input would be the
+00:15:00.170 setting on the thermostat for what we
+00:15:02.089 want the temperature of the room to be
+00:15:03.490 the output would be the actual
+00:15:05.600 temperature of the room and what we do
+00:15:08.990 here is we measure the actual
+00:15:11.449 temperature of the room with a sensor
+00:15:12.889 and then we feed this back and we take
+00:15:15.439 the difference between the reference
+00:15:16.999 input in other words the desired
+00:15:18.290 temperature of the room and the actual
+00:15:20.449 temperature that we've measured and if
+00:15:22.339 all is good and well in the world these
+00:15:23.779 two things will be equal and when we
+00:15:25.249 subtract and we get zero and the error
+00:15:27.199 signal will be zero so essentially our
+00:15:29.480 goal here is our mission in a control
+00:15:31.490 system application is we want to drive
+00:15:33.139 this error to zero because if this error
+00:15:34.759 is zero it means the desired temperature
+00:15:37.100 and the actual temperature are equal to
+00:15:39.230 one another which is what we want a good
+00:15:40.850 thermostat system should have this
+00:15:42.769 property looking at the other blocks in
+00:15:46.610 this diagram the plant in the case of a
+00:15:48.649 thermostat application would correspond
+00:15:50.660 to a combination of a heater and air
+00:15:52.550 conditioner it's kind of a it's the
+00:15:54.649 thing that we want to use to control the
+00:15:56.420 temperature we use the heater to
+00:15:59.000 increase the temperature when it's too
+00:16:00.379 low and
+00:16:00.860 air conditioner to decrease the
+00:16:02.270 temperature when it's too high and the
+00:16:04.700 last block that we have here the
+00:16:06.260 controller this is the thing often as
+00:16:08.450 engineers that we need to design it's
+00:16:10.310 the thing that looks at this error
+00:16:11.750 signal and decides based on whether the
+00:16:14.240 temperature is too high or too low and
+00:16:16.100 by how much is it too high and by how
+00:16:18.020 much is it too low it decides how much
+00:16:20.690 should I turn on the air conditioner or
+00:16:22.250 how much should I turn on the heater and
+00:16:23.660 so on in order to try to drive this
+00:16:25.850 error to zero in other words to try to
+00:16:27.470 make the actual temperature more closely
+00:16:30.380 track the desired temperature of course
+00:16:33.590 the thermostat is not a very exciting
+00:16:35.270 example right most of us probably don't
+00:16:37.130 aspire to become engineers so that we
+00:16:39.170 can design thermostats for the rest of
+00:16:41.150 our life
+00:16:41.630 I mean someone has to do it but probably
+00:16:44.240 a more interesting example might be
+00:16:45.920 something like a robot arm we're in the
+00:16:48.170 case of a robot a robot arm application
+00:16:50.360 the reference input would be probably
+00:16:52.220 the and the position of the end of the
+00:16:54.680 robot arm and then the output would be
+00:16:57.340 the actual position so the reference
+00:17:00.080 input is the desired position at the end
+00:17:01.700 of the robot arm and the output would
+00:17:03.800 correspond to the actual position the
+00:17:06.380 plant would correspond to joint motors
+00:17:08.599 the actual motors that we apply voltages
+00:17:10.880 to to actually move the various
+00:17:12.589 different parts of the robot arm and the
+00:17:17.270 controller again is the thing that looks
+00:17:19.040 at this error signal it looks at how
+00:17:20.839 much does the the measured position of
+00:17:24.470 the end of the robot arm differ from the
+00:17:26.089 desired position and if they're equal
+00:17:28.550 then this error would be zero but in the
+00:17:30.650 in most cases they won't be exactly zero
+00:17:32.690 and then this controller has to figure
+00:17:34.310 out essentially what voltages does it
+00:17:36.380 apply to the various joint motors to
+00:17:38.540 cause the end position of the robot arm
+00:17:40.730 to more closely track the position we'd
+00:17:42.620 like it to have so this is a few
+00:17:46.580 examples of control system kind of
+00:17:48.410 applications
+00:17:51.940 so in the preceding slides I introduced
+00:17:52.000 No text
+00:17:54.220 a number of application areas in which
+00:17:56.259 the mathematics of signals and systems
+00:17:57.909 can be applied we looked at signal
+00:18:00.639 processing systems communication systems
+00:18:03.100 control systems and there's many other
+00:18:05.259 application areas as well
+00:18:06.820 but even just signal processing systems
+00:18:09.580 communication systems and control
+00:18:10.990 systems covers a huge amount of ground
+00:18:12.700 in engineering there's a lot of jobs
+00:18:14.110 that revolve around these areas so the
+00:18:15.940 mathematics of signals and systems is
+00:18:18.129 really quite fundamentally important and
+00:18:19.809 it's not something that we just simply
+00:18:21.610 learn as engineers and quickly forget
+00:18:22.929 because it's not important there's a lot
+00:18:25.149 of jobs that rely on this sort of
+00:18:26.769 mathematics but of course we don't
+00:18:31.960 really like to learn math just for the
+00:18:33.700 fun of it right so like why is it that
+00:18:35.440 we're really learning this mathematics
+00:18:37.899 in the first place why do we really need
+00:18:39.460 this and the reason for this is the
+00:18:41.590 systems that we build get increasingly
+00:18:43.539 complex as years go by I mean if you
+00:18:45.940 even look at something as in quotations
+00:18:48.039 simple as a cell phone and a simple cell
+00:18:49.840 phone is not really that simple but
+00:18:52.029 relative to some other things that's
+00:18:53.799 relatively simple it's an immensely
+00:18:56.620 complicated thing and without having
+00:18:58.870 some kind of mathematical models and so
+00:19:00.850 on it would be difficult well not just
+00:19:02.679 difficult impossible to guarantee that
+00:19:04.450 it would ever work so when we're
+00:19:06.490 building systems you want to have some
+00:19:07.840 kind of mathematical framework that we
+00:19:09.789 can use to have some confidence for
+00:19:12.490 example that systems that we're building
+00:19:13.990 are gonna work before we even build them
+00:19:15.940 you know you don't want to spend
+00:19:17.830 millions of dollars building some bridge
+00:19:19.990 and then it collapses you know as soon
+00:19:21.940 as the first vehicle drives over it
+00:19:23.710 because you know if you had designed it
+00:19:25.720 properly from the beginning and
+00:19:26.980 mathematically modelled it you would
+00:19:28.389 know it wouldn't work and it was going
+00:19:29.830 to collapse so these things are really
+00:19:33.250 quite important for ensuring that we can
+00:19:35.649 design systems that are quite complex
+00:19:37.600 and still meet the required
+00:19:39.059 specifications first for safety or
+00:19:41.470 performance and so on and when systems
+00:19:44.500 fail to operate in in the way that we
+00:19:46.419 expect them to sometimes the
+00:19:48.519 consequences can be quite catastrophic
+00:19:50.190 especially when safety is involved and
+00:19:52.419 lives are on the line you know planes
+00:19:53.860 crash and so on and these things get
+00:19:56.500 quite helped quite disastrous
+00:19:58.539 consequences
+00:20:02.550 at this point I'd like to introduce an
+00:20:03.000 No text
+00:20:05.050 example of engineering gone wrong in
+00:20:07.060 other words I'd like to show what sort
+00:20:09.250 of things can happen when systems are
+00:20:11.530 not designed properly a particular
+00:20:14.200 example that I'm going to use here
+00:20:15.550 happen quite a long time ago and it's a
+00:20:18.040 classic example to use which is why I've
+00:20:19.930 chosen it probably people like to use it
+00:20:21.820 because it happened long ago so all of
+00:20:23.620 the people that were involved in this
+00:20:24.940 fiasco or long since dead and you don't
+00:20:26.860 have to worry about offending anyone but
+00:20:29.260 I'm sure that you can think of in your
+00:20:31.360 mind of a lot of more recent failures
+00:20:34.030 that are have been in the news lately
+00:20:35.800 it's not like this happens only once
+00:20:37.450 every 100 years
+00:20:38.620 it happens all too frequently
+00:20:40.300 unfortunately so the particular
+00:20:42.550 motivating example I want to consider is
+00:20:44.560 the Tacoma Narrows Bridge this is a
+00:20:46.960 bridge in Washington State in the United
+00:20:48.940 States that links Tacoma and gig harbor
+00:20:52.200 this was a very very long suspension
+00:20:55.360 bridge at the time it was built this was
+00:20:56.950 back in the 1930s the bridge costs over
+00:21:00.880 six million dollars to build which was a
+00:21:02.530 lot of money back in 1938 the bridge
+00:21:05.410 opened on July 1st 1940 and then on
+00:21:07.750 November 7th 1940 it collapsed and the
+00:21:10.990 really interesting thing is the bridge
+00:21:12.670 was designed to withstand supposedly
+00:21:15.160 withstand winds of up to 120 miles per
+00:21:17.680 hour and on the day it collapsed the
+00:21:19.750 winds were only 42 miles per hour so the
+00:21:21.790 bridge obviously didn't meet the
+00:21:23.410 specifications that it was supposed to
+00:21:25.240 be designed to meet and the bridge
+00:21:27.430 collapse was essentially caused by wind
+00:21:29.500 induced vibrations things have natural
+00:21:31.870 resonant frequencies that they vibrate
+00:21:33.640 at and vibrate at and the wind just
+00:21:36.460 happened even though it was not
+00:21:37.930 particularly strong it just happened to
+00:21:39.760 hit that natural resonant frequency the
+00:21:41.740 bridge starts vibrating and because it's
+00:21:43.660 not properly designed the energy and the
+00:21:46.000 vibrations don't get dissipated and the
+00:21:47.800 bridge starts faut oscillating with a
+00:21:49.590 greater and greater amplitude until
+00:21:52.120 eventually the structure can't stay
+00:21:54.280 intact anymore I just rips itself apart
+00:21:56.460 the failure of the bridge was completely
+00:21:59.350 catastrophic they had to just rip down
+00:22:00.910 what was left which wasn't much and
+00:22:02.680 start over
+00:22:04.050 fortunately the only fatality was a dog
+00:22:06.460 that was trapped in an abandoned car on
+00:22:08.200 the bridge
+00:22:08.890 I guess this calls into question though
+00:22:10.780 like why was there an abandoned dog
+00:22:12.250 there I guess someone didn't value their
+00:22:13.780 pet
+00:22:14.230 which is kind of sad but anyway it could
+00:22:16.900 have been much worse there could have
+00:22:17.919 been a lot more deaths some non-human
+00:22:19.870 ones and/or some human ones involved as
+00:22:22.600 well and again this is just a quite old
+00:22:26.020 example because there's you know no one
+00:22:28.030 that can be offended by this example but
+00:22:29.890 you know there's lots of more recent
+00:22:31.540 examples you know Hello Boeing 737 max
+00:22:34.710 and so on on this slide you can imagine
+00:22:41.000 No text
+00:22:42.730 that there's a picture of a bridge
+00:22:44.020 collapsing simply for copyright reasons
+00:22:46.030 I don't want to include an actual image
+00:22:48.179 but anyways you'd probably be more
+00:22:50.410 interested in watching a video anyway
+00:22:52.299 and there was the collapse of the bridge
+00:22:54.640 was captured on video so if you'd like
+00:22:57.370 to watch a video of the bridge collapse
+00:22:58.990 you can view it at this particular link
+00:23:01.960 on YouTube last time I looked there were
+00:23:04.150 about 12 million views of this video so
+00:23:06.429 it seems to be quite popular

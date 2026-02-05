@@ -1,0 +1,159 @@
+ECE 260 (Continuous-Time Signals and Systems); AOI, AO2
+Page 2
+
+Question 1.
+
+Consider the periodic function x with fundamental period 7 = 2 and funda-
+mental frequency @) shown in the figure. Using the Fourier series analy-
+sis equation, find the Fourier series coefficient sequence ¢ for the function
+x. Your solution must consider the single period of x(t) for 0<1<T.
+Your final answer must be fully simplified. You may use the fact that
+Jxetdx = 4,e(ax—1) +C for a4 0. [8 marks]
+
+ECE 260 (Continuous-Time Signals and Systems}: AOL, AO2
+
+‘Question 2. Using the MATLAB programming language, write a function called count_nonzex6 that takes a matrix = as
+input and returns the number of nonzero elements in s. Your code must not eall any other functions other than wc and
+hetght. (The wieb function takes a matrix as a parameter and returns the number of columns in the matrix. The nei)
+
+function is similar except it returns the number of sows.) Your code must use proper indentation and must not exceed 15
+
+lines in length. Be sure to use correct syntax in your answer, since syntax clearly matters here. [2 marks]
+
+Line # | Line of Code
+
+‘Question 3. A LTT system has the impulse response ft given by f(t) =
+response y ofthe system to the input x(t)
+
+positive rel a and all real b [8 marks]
+
+a(t). Using Fourier series techniques, find the
+(0-4 2cos(t)+2/sin(2r). (Do not use convolution.) Your final answer for y must
+‘be fully simplified, but may contain complex sinusoids. Do nt skip any steps in your solution and show all of your work
+You must make clear the approach being sed in your answer, You may use the fact hate e~*e"™ p= vy fra (ity)
+
+‘Question 4, Consider the periodic function x with fundamental period T = 2, where
+
+‘Suppose that x has the Fourier series representation y(#)
+fully justify your answer. [3 marks}
+
+io exe!" Find y(0) and y(1). Show all of your work, and
+
+ECE 260 (Continuous-Time Signals and Systems}: AOL, A02
+Page 6
+
+Question 5. Let x denote periodic function with fundamental period 1’ = 2, fundamental frequency ey, and the Fourier
+ft(j2k-+1)
+
+sees coeficient sequence, where 2
+“ (2k—1)
+
+(A) Finda flly-simplified expression forthe (Fourier series) magnitude spectrum of x. [3 marks}
+
+(B) Determine the frequency (or fequencies) at which x has the most spectral information. You must make clear how you
+sarived at your answer. [1 mark]
+
+
+ECE260 (Continuous-Time Signals and Systems); AO1, A02
+Page |
+
+University of Victoria
+Exam 4
+Fall 2024
+
+Course Name: ECE260
+Course Title: Continuous-Time Signals and Systems
+Section(s): A01, A02
+CRN(s): A01 (CRN 10960), A02 (CRN 10961)
+Instructor: Michael Adams
+Duration: 50 minutes
+
+Family Name:
+ident Number? GD
+L Page 1 of 9
+Student Number: —
+
+This examination paper has 9 pages, all of which are numbered.
+
+Students must count the number of pages in this examination paper before beginning to write, and report
+any discrepancy immediately to the invigilator.
+
+All questions are to be answered on the examination paper in the space provided.
+Total Marks: 26
+
+This examination is closed book.
+The use of a crib sheet is not permitted.
+The use of a calculator is not permitted.
+You must show all of your work!
+
+You must clearly define any new quantities introduced in your answers (such as variables, functions,
+operators, and so on).
+
+ECE260 (Continuous-Time Signals and Systems); AO1, A02
+Page 2
+
+This page was Méhyoisuthlefiagns outcfihoats duplex printing.
+Do not write on this Page unless instructed to do so.
+Because this is a premium document. Subscribe to unlock this document and more.
+
+@? —2jo
+(jo —1)?"
+
+(A) Find a fully-simplified expression for the magnitude response of the system. [2 marks]
+
+Question 1. A LTI system has the frequency response H(@) =
+
+(B) Determine the type of frequency-selective filter that this system best approximates. Your answer must be fully justified.
+A correct final answer that is not justified will receivezero marks. [2 marks]
+
+ECE260 (Continuous-Time Signals and Systems); AO1, A02
+Page 4
+
+Question 2. In this question, we consider the application of an audio cassette player. An audio tape is played in an audio
+cassette player to produce an audio signal x that is bandlimited to frequencies @ in the range —4000x < @ < 4000z. In every
+part of this question, the following comments apply: 1) you must show all steps in your solution; 2) your answer must be
+fully justified (e.g., any identities, formulas, or theorems being used must be explicitly stated) and the logic leading to your
+final answer must be clear; 3) zero marks will be given for a correct final answer that has a missing or incorrect justification.
+
+(A) Determine the minimum rate at which x can be sampled such that x can be exactly reconstructed from its samples.
+{1 mark]
+
+(B) A mechanical engineering student, with too much spare time on their hands, modifies the audio cassette player so that it
+plays a tape at a factor of 8 slower than the standard speed to produce the audio signal v(t) = x(t/8). Determine the minimum
+rate at which v can be sampled such that v can be exactly reconstructed from its samples. [2 marks]
+
+ECE260 (Continuous-Time Signals and Systems); AO1, A02
+Page 5
+
+Question 2(b) Continued
+
+(C) Not to be outdone by a mechanical engineering student, an electrical engineering student, with considerably more spare
+time on their hands, builds an AM radio transmitter to broadcast the audio signal x to their classmates. The output y of the AM
+transmitter is given by y(t) = x(t)cos(8000xf). Determine the minimum rate at which y can be sampled such that y can be
+exactly reconstructed from its samples. [3 marks]
+
+Question 3. A LTI system with the input x and output y has the frequency response H (@) = 3632021: Find the differential
+
+equation that characterizes this system. You may use J to denote the derivative operator in your answer. [5 marks]
+
+ECE260 (Continuous-Time Signals and Systems); AO1, A02
+Page 7
+
+cnr 2
+
+Question 4, Using the Fourier transform pair eles, @211 2nd properties of the Fourier transform, find the Fourier trans-
+form X of the function x(t) = e~ 31, You must use a systematic method, show all of your work, and you must not skip
+any steps. A correct final answer with an incorrect or incomplete justification may receive zero marks. [6 marks]
+
+ECE260 (Continuous-Time Signals and Systems); AO1, A02
+
+Page 8
+Question 5. L Cc
+Consider the LTI resistor-inductor-capacitor (RLC) circuit with input vo and output i 1 |
+
+v,, as shown in the figure. This circuit can be shown to be characterized by the +
+equations: i(t) =4v (t) and Dvo(t) =4 7 i(t) + 2i(t) + Dvi(t), where J is the —_ vol)
+derivative operator. Find the frequency response H of the circuit. Do not skip any =
+steps and show all of your work. [5 marks]
+
+END
